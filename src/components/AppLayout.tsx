@@ -138,7 +138,12 @@ export function AppLayout({
           </div>
         </header>
 
-        <main className="mx-auto max-w-[1500px] p-5 md:p-8">{children}</main>
+        <main className="mx-auto max-w-[1500px] p-5 md:p-8">
+          {children}
+          <footer className="mt-10 border-t border-border pt-4 text-center text-[11px] text-muted-foreground">
+            Responsible AI: AI content may be inaccurate and should be reviewed before use.
+          </footer>
+        </main>
       </div>
     </div>
   );
